@@ -1,3 +1,37 @@
+/* document setup */
+html {
+  scroll-behavior: smooth;
+}
+
+/* tableOfContents */
+.tableOfContents {
+  border: 1px solid #a2a9b1;
+  max-width: 14.5rem;
+}
+
+/* variations */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  /* font-size: 30px; */
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* share button */
 .sbuttons {
   bottom: 5%;
   position: fixed;
@@ -99,30 +133,4 @@
 .sbutton.github {
   background: #f5f5f5;
   color: #333333;
-}
-
-
-
-
-
-/* tableOfContents */
-.tableOfContents {
-  border: 1px solid #a2a9b1;
-  max-width: 14.5rem;
-}
-
-/* variations */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* background-color: #2196f3; */
-  padding: 10px;
-}
-
-.grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 20px;
-  /* font-size: 30px; */
-  text-align: center;
 }
