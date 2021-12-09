@@ -28,33 +28,45 @@ a {
 }
 
 
+/* @media screen and (max-width: 600px) {#nav a:not(:first-child) {display: none;text-align: center !important;}#nav a.icon {float: right;display: block;}} */
+@media screen and (max-width: 600px) {
+
+}
+/* xlarge: ['1281px', '1680px'],
+  large: ['981px', '1280px'],
+  medium: ['737px', '980px'],
+  small: ['361px', '736px'],
+  xsmall: [null, '360px'] */
+
 
 
 
 
 
 /* share button */
-.sbuttons {  
-  display: inline-block; text-align: right; width: 100%;
-
-
+/* .sbuttonsOutter {  
+  display: inline-block; 
+  text-align: right;
+  width: 50%;
   bottom: 5%;
-  position: fixed;
-  margin: 1em;
   left: 0;
+  right: 0px;
+  bottom: 0px;  
+  position: absolute;
+  right: 0px;
+  padding: 10px;
 }
 .sbutton {
-  /* display: block; */
-  /* width: 60px; */
-  /* height: 60px; */
-  /* border-radius: 50%; */
-  /* text-align: center; */
-  /* color: white; */
-  /* margin: 20px auto 0; */
-  /* box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15); */
-  /* cursor: pointer; */
-  /* -webkit-transition: all 0.1s ease-out; */
-  /* transition: all 0.1s ease-out; */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 20px auto 0;
+  box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
   position: relative;
 }
 .sbutton > i {
@@ -63,11 +75,7 @@ a {
   transition: all 0.2s ease-in-out;
   transition-delay: 2s;
 }
-/* .sbutton:active,
-.sbutton:focus,
-.sbutton:hover {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-} */
+
 .sbutton:not(:last-child) {
   width: 60px;
   height: 60px;
@@ -84,62 +92,4 @@ a {
   width: 60px;
   height: 60px;
   margin: 15px auto 0;
-}
-/* .sbutton:nth-last-child(1) {
-  -webkit-transition-delay: 25ms;
-  transition-delay: 25ms;
-}
-.sbutton:not(:last-child):nth-last-child(2) {
-  -webkit-transition-delay: 20ms;
-  transition-delay: 20ms;
-}
-.sbutton:not(:last-child):nth-last-child(3) {
-  -webkit-transition-delay: 40ms;
-  transition-delay: 40ms;
-}
-.sbutton:not(:last-child):nth-last-child(4) {
-  -webkit-transition-delay: 60ms;
-  transition-delay: 60ms;
-}
-.sbutton:not(:last-child):nth-last-child(5) {
-  -webkit-transition-delay: 80ms;
-  transition-delay: 80ms;
-}
-.sbutton:not(:last-child):nth-last-child(6) {
-  -webkit-transition-delay: 100ms;
-  transition-delay: 100ms; */
-/* } */
-
-/* [tooltip]:before {
-  font-weight: 600;
-  background-color: #585858;
-  color: #fff;
-  content: attr(tooltip);
-  font-size: 12px;
-  visibility: hidden;
-  opacity: 0;
-  padding: 5px 7px;
-  margin-left: 10px;
-  position: absolute;
-  left: 100%;
-  bottom: 20%;
-  white-space: nowrap;
 } */
-
-/* [tooltip]:hover:before,
-[tooltip]:hover:after {
-  visibility: visible;
-  opacity: 1;
-} */
-
-.sbutton.mainsbutton {
-  background: #2ab1ce;
-}
-.sbutton.github {
-  background: #f5f5f5;
-  color: #333333;
-}
-.sbutton.discord {
-  background: #5865F2;
-  color: #FFFFFF;
-}
