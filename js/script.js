@@ -1,8 +1,6 @@
-// pageLoad()
-const pageLoad = async() => {
+document.addEventListener("DOMContentLoaded",  async() => {
     getIP()
-}
-document.addEventListener("DOMContentLoaded", pageLoad);
+});
 
 const getIP = async () => {
     try {
