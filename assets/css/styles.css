@@ -1,0 +1,211 @@
+/* document setup */
+html {
+  scroll-behavior: smooth;
+  color: #eeeeee;
+  background-color: #1c1c1c;
+  font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", Arial, sans-serif;
+}
+a {
+  color: #447ff5;
+}
+
+/* tableOfContents */
+.tableOfContents {
+  border: 1px solid #a2a9b1;
+  max-width: 15.5em;
+}
+
+
+/* .grid-container{
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+} */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+} */
+
+.grid-item {
+  padding: 20px;
+  /* text-align: center; */
+}
+
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+
+  body {
+    font-size: 100%;
+  }
+
+  /* variations */
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  body {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+  body {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 1em;
+  }
+}
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  body {
+    font-size: 100%;
+  }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only */
+  body {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+  body {
+    font-size: 100%;
+  }
+}
+
+
+.share-btn{
+  /* border: none; */
+  background: #fff;
+  color: #ff7d7d;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 2;
+  position: fixed; right: 0; bottom: 2%; padding-right: 2%;
+}
+
+.share-options{
+  position: absolute;
+  bottom: 4%;
+  right: 3%;
+  width: auto;
+  height: auto;
+  transform-origin: bottom right;
+  transform: scale(0);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgba(15, 15, 15, 0.5);
+  color: #fff;
+  padding: 20px;
+  transition: .5s;
+  transition-delay: .5s;;
+}
+.share-options.active{
+  transform: scale(1) !important;
+  transition-delay: 0s;
+}
+.title{
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 0s;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding: 0 20px 3px 0;
+}
+.social-media{
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 0s;
+  width: 250px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.social-media-btn{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  line-height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-align: center;
+}
+.social-media-btn:nth-child(1){
+  background: #FFA654;
+}
+.social-media-btn:nth-child(2){
+  background: #25D366;
+}
+.social-media-btn:nth-child(3){
+  background: #E4405F;
+}
+.social-media-btn:nth-child(4){
+  background: #1DA1F2;
+}
+.social-media-btn:nth-child(5){
+  background: #1877F2;
+}
+.social-media-btn:nth-child(6){
+  background: #0A66C2;
+}
+.link-container{
+  opacity: 0;
+  transition: .5s;
+  transition-delay: 0s;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.link{
+  width: 80%;
+  height: 100%;
+  line-height: 40px;
+  color: #000;
+}
+.copy-btn{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 30%;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container{
+  opacity: 1;
+  transition: .5s;
+  transition-delay: .5s;
+}
