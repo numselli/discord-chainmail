@@ -15,24 +15,12 @@ a {
   max-width: 15.5em;
 }
 
-
-/* .grid-container{
-  display: grid;
-
-  grid-template-columns: auto auto auto;
-} */
-/* .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-} */
-
+/* more examples */
 .grid-item {
   padding: 20px;
-  /* text-align: center; */
 }
 
-
+/* dynaic font size */
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 
@@ -84,9 +72,8 @@ a {
   }
 }
 
-
+/* share menu */
 .share-btn{
-  /* border: none; */
   background: #fff;
   color: #ff7d7d;
   border-radius: 50%;
@@ -95,9 +82,13 @@ a {
   font-size: 2em;
   cursor: pointer;
   z-index: 2;
-  position: fixed; right: 0; bottom: 2%; padding-right: 2%;
+  position: fixed;
+  right: 0;
+  bottom: 2%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
-
 .share-options{
   position: absolute;
   bottom: 4%;
@@ -151,56 +142,6 @@ a {
   cursor: pointer;
   margin: 0 5px;
   text-align: center;
-}
-.social-media-btn:nth-child(1){
-  background: #FFA654;
-}
-.social-media-btn:nth-child(2){
-  background: #25D366;
-}
-.social-media-btn:nth-child(3){
-  background: #E4405F;
-}
-.social-media-btn:nth-child(4){
-  background: #1DA1F2;
-}
-.social-media-btn:nth-child(5){
-  background: #1877F2;
-}
-.social-media-btn:nth-child(6){
-  background: #0A66C2;
-}
-.link-container{
-  opacity: 0;
-  transition: .5s;
-  transition-delay: 0s;
-  width: 100%;
-  position: relative;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  border-radius: 40px;
-  background-color: #fff;
-  overflow: hidden;
-  padding: 0 10px;
-}
-.link{
-  width: 80%;
-  height: 100%;
-  line-height: 40px;
-  color: #000;
-}
-.copy-btn{
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-  background: #000;
-  color: #fff;
-  border: none;
-  height: 100%;
-  width: 30%;
-  text-transform: capitalize;
-  font-size: 16px;
 }
 .share-options.active .title,
 .share-options.active .social-media,

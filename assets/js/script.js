@@ -12,7 +12,6 @@ const getIP = async () => {
     }
 }
 
-
 document.getElementById('share-btn').addEventListener('click', () => {
     document.getElementById('share-options').classList.toggle('active');
 })
