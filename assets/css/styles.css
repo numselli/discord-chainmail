@@ -1,18 +1,11 @@
 /* document setup */
 html {
   scroll-behavior: smooth;
-  color: #eeeeee;
-  background-color: #1c1c1c;
+  color: #eeeeee;background-color: #1c1c1c;
   font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1", "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4", "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova", "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L", "Liberation Sans", "Open Sans", Arial, sans-serif;
 }
 a {
   color: #447ff5;
-}
-
-/* tableOfContents */
-.tableOfContents {
-  border: 1px solid #a2a9b1;
-  max-width: 15.5em;
 }
 
 /* more examples */
@@ -146,9 +139,8 @@ a {
   align-items: center; 
   justify-content: center;
 }
-.share-options.active .title,
-.share-options.active .social-media,
-.share-options.active .link-container{
+.share-options.active .title
+.share-options.active .social-media{
   opacity: 1;
   transition: .5s;
   transition-delay: .5s;
