@@ -139,8 +139,9 @@ a {
   align-items: center; 
   justify-content: center;
 }
-.share-options.active .title
-.share-options.active .social-media{
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container{
   opacity: 1;
   transition: .5s;
   transition-delay: .5s;
