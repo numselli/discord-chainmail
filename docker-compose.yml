@@ -1,0 +1,7 @@
+services:
+  site:
+    restart: unless-stopped
+    build: ./src
+    container_name: site
+    ports:
+      - 80:80
