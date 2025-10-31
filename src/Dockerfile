@@ -1,4 +1,4 @@
-FROM nginx:1.27.4-alpine3.21-slim
+FROM nginx:1.28.0-alpine3.21-slim
 
 WORKDIR /app
 COPY ./static /app/static
