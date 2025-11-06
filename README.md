@@ -1,4 +1,4 @@
-[Discord Chainmail](https://discord-chainmail.numselli.xyz) is meant to inform people about fake chain messages on the chat platform [Discord](https://discord.com/).
+[Discord Chainmail](https://numselli.xyz/blogs/discordchainmail) is meant to inform people about fake chain messages on the chat platform [Discord](https://discord.com/).
 This website was inspired by seeing one of these chain messages and being so frustrated that people believe them.
 Instead of addressing these messages individually, I decided to create this site to address them all at once.
 This site primarily focuses on examples from the Discord platform but lots of the points made can apply to other platforms.  
